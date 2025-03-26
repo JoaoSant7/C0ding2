@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Currículo</title>
+    <style>
+        body { font-family: 'Times New Roman', Times, serif, sans-serif; text-align: center; }
+        iframe { width: 80%; height: 300px; border: 1px solid #ccc; margin-top: 10px; }
+        nav { margin: 20px 0; }
+        button { padding: 10px; margin: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h1>João Pedro <br> do <br> Nascimento Santana</h1>
+
+    <nav>
+        <button onclick="mudarPagina('sobre.html')">Sobre</button>
+        <button onclick="mudarPagina('experiencia.html')">Experiência</button>
+        <button onclick="mudarPagina('formacao.html')">Formação</button>
+    </nav>
+
+    <iframe id="conteudo" src="sobre.html"></iframe>
+
+    <script>
+        function mudarPagina(pagina) {
+            document.getElementById('conteudo').src = pagina;
+        }
+    </script>
+
+</body>
+</html>
