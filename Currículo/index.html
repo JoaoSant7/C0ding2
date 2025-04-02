@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>http://127.0.0.1:3000/Curriculum/index.html
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
@@ -7,21 +7,22 @@
     <style>
         body { font-family: 'Times New Roman', Times, serif, sans-serif; text-align: center; }
         iframe { width: 80%; height: 300px; border: 1px solid #ccc; margin-top: 10px; }
-        nav { margin: 20px 0; }
-        button { padding: 10px; margin: 5px; cursor: pointer; }
+        
     </style>
 </head>
 <body>
 
     <h1>João Pedro <br> do <br> Nascimento Santana</h1>
 
+    <center>
     <nav>
-        <button onclick="mudarPagina('sobre.html')">Sobre</button>
-        <button onclick="mudarPagina('experiencia.html')">Experiência</button>
-        <button onclick="mudarPagina('formacao.html')">Formação</button>
+        <a href="sobre.html" target="main"> |Sobre| </a>
+        <a href="formacao.html" target="main"> Formação  </a>
+        <a href="experiencia.html" target="main"> |Experiência| </a>
     </nav>
 
-    <iframe id="conteudo" src="sobre.html"></iframe>
+    <iframe name="main" src="sobre.html" frameborder="0" height="400" width="1200"></iframe>
+    </center>
 
     <script>
         function mudarPagina(pagina) {
